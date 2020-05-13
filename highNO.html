@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Day 2</title>
+    </head>
+    
+<body>
+    Original array is <p id="org"></p> <br>
+    <p>Highest number in Array: <span id="demo"></span>.</p>
+    
+    <script>
+    var num = [5,20,12,2,3,-5,0,99,150,66];
+    num.sort(function(a, b){return b-a});
+    document.getElementById("demo").innerHTML = num[0];
+    
+    document.getElementById("org").innerHTML = num;
+    
+    </script>
+</body>
+</html>

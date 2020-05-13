@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<h2>Random Function</h2>
+
+<p>click button again and again to genrate random number between 0 - 9</p>
+
+<button onclick="document.getElementById('r_nm').innerHTML = random(0,10)">Click to genrate</button>
+
+<p id="r_nm"></p>
+
+<script>
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+</body>
+</html>
